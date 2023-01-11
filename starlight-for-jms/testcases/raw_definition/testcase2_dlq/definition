@@ -63,5 +63,5 @@
 # Example Producer to a topic, 50 clients, 10 connections, 5 sessions per connection, defaults on msg props and content
 pstal01,P,false,T,persistent://MYTENANT2/NS2/PERF.TEST.TOPIC.P3,,,50,10,5,individual_ack,10,1,1000M,1,2m,default,default,,,,,,
 # Example Consumer to a queue, shared-durable, sub name "PERF.TEST.TOPIC.P3:PERF.TEST.Q.CON-168697", 50 clients, 10 connections, 5 sessions per connection, individual_acks, msg ack ratio "0", slow acks "3", Ack timeout "10", DLQ queue and redelivery setup
-pstal03,C,false,Q,persistent://MYTENANT2/NS2/PERF.TEST.TOPIC.P3:PERF.TEST.Q.CON-168697,ds,,50,5,10,individual_ack,10,0,1000M,0,3m,default,default,,3,10,maxRedeliverCount:2+deadLetterTopic:persistent://MYTENANT2/DLQ/PERF.TEST.Q.CON-168697.DLQ+initialSubscriptionName:PERF.TEST.Q.CON-168697.DLQ,minDelayMs:10+maxDelayMs:10+multiplier:2.0,
+pstal03,C,false,Q,persistent://MYTENANT2/NS2/PERF.TEST.TOPIC.P3,ds,PERF.TEST.Q.CON-168697,50,5,10,individual_ack,10,0,1000M,0,3m,default,default,,3,10,maxRedeliverCount:2+deadLetterTopic:persistent://MYTENANT2/DLQ/PERF.TEST.Q.CON-168697.DLQ+initialSubscriptionName:PERF.TEST.Q.CON-168697.DLQ,minDelayMs:10+maxDelayMs:10+multiplier:2.0,
 # Last line must be blank or comment 

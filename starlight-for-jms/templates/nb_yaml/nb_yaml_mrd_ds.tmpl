@@ -19,9 +19,6 @@ blocks:
   # - subscription: durable, shared
   #------------------
   msg-consumer-block:
-    tags:
-      name: "msg-read-block"
-      phase: "mrds"
     ops:
       ops1:
         MessageConsume: "<TMPL-DEST_NAME>"  

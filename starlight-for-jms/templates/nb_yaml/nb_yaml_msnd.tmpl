@@ -25,9 +25,6 @@ blocks:
   # message sender/producer/publisher to a topic
   #------------------
   msg-producer-block:  
-    tags:
-      name: "msg-send-block"
-      phase: "mst"
     ops:
       op1:
         MessageProduce: "<TMPL-DEST_NAME>"
