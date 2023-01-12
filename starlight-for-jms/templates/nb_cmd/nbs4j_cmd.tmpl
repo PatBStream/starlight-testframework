@@ -275,7 +275,7 @@ fi
 if [[ ${ctrlExecEnable} -gt 0 ]]; then
    NB_SCN_EXEC_BASE="${NB_SCN_EXEC_BASE} \
       waitmillis $ctrlExecTimeInMillisec \
-      stop nb_activity"
+      forceStop nb_activity"
 fi
 
 echo
